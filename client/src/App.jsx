@@ -1,13 +1,11 @@
-import {
-  Routes,
-  Route
-} from "react-router-dom";
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 
-import Home from "./pages/Home";
-import Missions from "./pages/Missions";
-import Game from "./pages/Game";
-import Results from "./pages/Results";
-import Leaderboard from "./pages/Leaderboard";
+import Home from './pages/Home'
+import Missions from './pages/Missions'
+import Game from './pages/Game'
+import Results from './pages/Results'
+import Leaderboard from './pages/Leaderboard'
 
 export default function App() {
   return (
@@ -37,5 +35,5 @@ export default function App() {
         element={<Leaderboard />}
       />
     </Routes>
-  );
+  )
 }

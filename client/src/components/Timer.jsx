@@ -1,3 +1,4 @@
+import React from 'react'
 import { useEffect } from "react";
 
 export default function Timer({
@@ -40,8 +41,8 @@ export default function Timer({
   return (
     <div
       className={`timer ${timeLeft < 60
-          ? "danger"
-          : ""
+        ? "danger"
+        : ""
         }`}
     >
       ⏱ {minutes}:{seconds}
