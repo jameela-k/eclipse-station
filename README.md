@@ -1,229 +1,169 @@
 # 🚀 Eclipse Station
 
-A space-themed React escape room for Software Engineering students.
+A space-themed interactive web application built for Software Engineering students.
 
-Students solve coding, logic, math and pattern puzzles while racing against the clock.
+Eclipse Station challenges students with interactive coding, logic, problem-solving, and puzzle-based activities in a fun, game-like environment.
 
-## Tech Stack
+## ✨ Features
+
+* Interactive missions and challenges
+* Puzzle-based activities
+* Mission progress tracking
+* Score and XP system
+* Results and leaderboard
+* Responsive user interface
+* Backend API with database integration
+
+---
+
+# 🛠️ Tech Stack
 
 ### Frontend
 
-- React
-- Vite
-- React Router
-- CSS
+* React
+* Vite
+* React Router
+* CSS
 
 ### Backend
 
-- Node.js
-- Express
-- MongoDB
-- Mongoose
+* Node.js
+* Express
+* MongoDB
+* Mongoose
 
 ### Deployment
 
-- Vercel
-- Render
-- MongoDB Atlas
+* Vercel
+* Render
+* MongoDB Atlas
 
 ---
 
-# Project Structure
+# 📁 Project Structure
 
+```text
 eclipse-station/
-
-client/
-    React application
-
-server/
-    Express API
-    MongoDB models
-    Controllers
-    Routes
-    Seed data
+│
+├── client/
+│   ├── React application
+│   ├── Components
+│   ├── Pages
+│   └── Styles
+│
+└── server/
+    ├── Express API
+    ├── Models
+    ├── Controllers
+    ├── Routes
+    └── Seed data
+```
 
 ---
 
-# Local Setup
+# 🚀 Local Setup
 
-## 1. Clone the project
+## 1. Clone the Repository
 
+```bash
 git clone YOUR_REPOSITORY_URL
-
 cd eclipse-station
+```
 
----
+## 2. Set Up the Backend
 
-# Backend
-
+```bash
 cd server
-
 npm install
+```
 
-Create:
+Create a `.env` file inside the `server` folder:
 
-.env
-
-Add:
-
-MONGO_URI=mongodb://127.0.0.1:27017/eclipse-station
+```env
+MONGO_URI=YOUR_MONGODB_CONNECTION_STRING
 PORT=5000
 CLIENT_URL=http://localhost:5173
+```
 
-Seed the missions:
+Seed the database if required:
 
+```bash
 npm run seed
+```
 
-Start the server:
+Start the backend:
 
+```bash
 npm run dev
+```
 
 ---
 
-# Frontend
+## 3. Set Up the Frontend
 
 Open another terminal:
 
+```bash
 cd client
-
 npm install
-
 npm run dev
+```
 
-Open:
+The frontend will be available at:
 
+```text
 http://localhost:5173
+```
 
 ---
 
-# Missions
+# 🌐 Deployment
 
-ECL-001
-The Locked Station
+Eclipse Station can be deployed using:
 
-ECL-002
-Black Hole Protocol
+* **Frontend:** Vercel
+* **Backend:** Render
+* **Database:** MongoDB Atlas
 
-ECL-003
-Signal from Europa
+### Backend Environment Variables
 
-ECL-004
-Asteroid Impact
-
-ECL-005
-Station Zero
-
----
-
-# Scoring
-
-Completed mission:
-
-500 XP
-
-Each solved puzzle:
-
-50 XP
-
-Remaining time:
-
-5 XP per 10 seconds
-
-Hint:
-
--25 XP
-
----
-
-# Deployment
-
-## MongoDB Atlas
-
-Create a free MongoDB Atlas cluster.
-
-Create a database user.
-
-Allow access from:
-
-0.0.0.0/0
-
-Copy the MongoDB connection string.
-
----
-
-# Render
-
-Create a new Web Service.
-
-Root directory:
-
-server
-
-Build command:
-
-npm install
-
-Start command:
-
-npm start
-
-Add environment variables:
-
+```env
 MONGO_URI=YOUR_MONGODB_CONNECTION_STRING
+CLIENT_URL=YOUR_FRONTEND_URL
+PORT=5000
+```
 
-CLIENT_URL=YOUR_VERCEL_URL
+### Frontend Environment Variables
 
----
+```env
+VITE_API_URL=YOUR_BACKEND_API_URL
+```
 
-# Seed Production Database
-
-After deploying the backend:
-
-Open the Render shell and run:
-
-npm run seed
-
----
-
-# Vercel
-
-Create a new Vercel project.
-
-Root directory:
-
-client
-
-Build command:
-
-npm run build
-
-Output directory:
-
-dist
-
-Add:
-
-VITE_API_URL=https://YOUR-RENDER-URL.onrender.com/api
+Make sure the frontend API URL points to the deployed backend.
 
 ---
 
-# Student Experience
+# 🎮 Student Experience
 
-Students only need the Vercel URL.
+Students interact with the application through the deployed frontend.
 
-They do NOT need:
-
-- VS Code
-- Node.js
-- MongoDB
-- Git
-- GitHub
-
-They simply:
+They can:
 
 1. Open Eclipse Station
-2. Enter their name
-3. Select a mission
-4. Solve the puzzles
-5. Escape
-6. Check the leaderboard
+2. Enter their name or information if required
+3. Browse available missions
+4. Select a mission
+5. Complete the challenges
+6. View their results
+7. Track their progress
+8. Check the leaderboard
+
+Students do not need to install or configure the project's development tools to use the deployed application.
+
+---
+
+# 📌 Notes
+
+This project is designed as an educational game-based experience for Software Engineering students.
+
+The missions, challenges, scoring system, and content can be customized and expanded as the project develops.
